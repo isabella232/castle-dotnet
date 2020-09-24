@@ -24,7 +24,6 @@ namespace Castle
             ArgumentGuard.NotNull(configuration, nameof(configuration));
 
             _configuration = configuration;
-            CastleConfiguration.SetConfiguration(configuration);
 
             _logger = new LoggerWithLevels(configuration.Logger, configuration.LogLevel);
 
